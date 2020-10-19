@@ -1,0 +1,7 @@
+NumPy数组格式化打印方法 （指定小数点位数）
+
+np.set_printoptions(precision=3, suppress=True)
+
+precision: 保留几位小数，后面不会补0
+supress: 对很大/小的数不使用科学计数法 (true)
+formatter: 强制格式化，后面会补0
