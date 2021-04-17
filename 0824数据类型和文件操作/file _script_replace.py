@@ -10,11 +10,13 @@ f = open(f_name, "r", encoding="UTF-8")
 f_new = open(f_new_name, "w", encoding="UTF-8")  # 同时创建一个新文件
 i = 0
 for line in f:
-    if old_str in line:
-        new_line = line.replace(old_str, new_str)  # 全局查找替换 # 帮助文档说明replace会覆盖原文件
-        i += 1
-    else:
-        new_line = line
+    new_line = ""
+    for letter in line:
+        if letter == old_str:
+            new_line += new_str
+            i += 1
+        else:
+            new_line += letter
     f_new.write(new_line)
 
 f.close()

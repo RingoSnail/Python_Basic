@@ -10,7 +10,7 @@ dict1 = {
 dict2 = dict1
 dict3 = dict1.copy()
 
-dict1["age"] = 20
+dict2["age"] = 20
 dict1["scores"]["数学"] = 77  # 浅copy 只有第一层独立
 
 print(dict1)
