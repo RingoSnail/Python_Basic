@@ -1,0 +1,48 @@
+9.1 DBMS
+    数据库管理系统DBMS，如MySQL、Oracle、SQLite、Access、MS SQL Server
+    解决数据共享、查询效率、安全性等一系列问题
+
+    两大分类：
+    关系型：如sqllite，db2，oracle，access，sql server，MySQL，注意：sql语句通用
+　　 非关系型：mongodb，redis，memcache
+
+    可简单理解为：
+    关系型数据库需要有表结构
+    非关系型数据库是key-value存储的，没有表结构
+
+    数据库服务器-数据库管理系统-数据库-表-记录
+
+9.3 MySQL
+    win+r cmd d: cd D:\mysql-8.0.25-winx64\bin
+
+9.4 sql
+    Structured Query Language 即结构化查询语言
+    1、DDL语句    数据库定义语言： 数据库、表、视图、索引、存储过程，例如CREATE DROP ALTER
+    2、DML语句    数据库操纵语言： 插入数据INSERT、删除数据DELETE、更新数据UPDATE、查询数据SELECT
+    3、DCL语句    数据库控制语言： 例如控制用户的访问权限GRANT、REVOKE
+
+9.6 存储引擎
+    SQL 解析器、SQL 优化器、缓冲池、存储引擎等组件在每个数据库中都存在
+    但不是每个数据库都有这么多插件式存储引擎
+
+9.8 数据类型
+    数值：
+    整型：tinyint int bigint  范围不同，都可区分有无符号
+    小数：float double decimal  精度不同
+
+    字符串：char(10) varchar  长度不同
+          text blob binary
+
+    时间类型：year date time datetime timestamp
+
+    枚举类型集合类型：enum 多选一；set 多选多
+
+9.13 完整性约束（一些可选参数）
+    作用：用于保证数据的完整性和一致性
+
+    null  not null  default
+    unique
+    primary key  主键：字段的值不为空且唯一；单列 多列主键
+    auto_increment  一般是插入新数据时，对主键自动增加一行
+
+    foreign key  外键：一张子表，关联到父表上，父表的变化会影响到子表上

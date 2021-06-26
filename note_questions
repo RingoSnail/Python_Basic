@@ -1,0 +1,9 @@
+生成器和迭代器是什么？怎么用？
+
+return和yield区别？
+    带有yield的函数是一个生成器，先要变成生成器才能被执行。
+    return和yield都可以返回值，而return会直接结束函数运行。
+    生成器接口有next()函数，next是从上回yield之后的位置继续运行。
+    send()函数发送一个参数给函数，并next
+
+try except ?
