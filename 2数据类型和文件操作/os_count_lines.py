@@ -1,7 +1,7 @@
 import os
 import re
 
-a = os.listdir("C:/Users/Ringo/PycharmProjects/Hi_python/0824数据类型和文件操作")
+a = os.listdir("C:/Users/Ringo/PycharmProjects/Hi_python/2数据类型和文件操作")
 a.remove(a[-1])
 print(a)
 

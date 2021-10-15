@@ -5,3 +5,19 @@ np.set_printoptions(precision=3, suppress=True)
 precision: 保留几位小数，后面不会补0
 supress: 对很大/小的数不使用科学计数法 (true)
 formatter: 强制格式化，后面会补0
+
+案例1：数据挖掘
+贝叶斯理论：P(A|B) = P(B|A) * P(A) / P(B)
+基于对某一事件的证据的认识来预测该事件发生的概率
+
+贝叶斯分类器：P(Ck|X) = P(x1,x2,...,xn|Ck) * P(Ck) / P(X)  转化为求 max(求积P(xi|Ck))
+基于贝叶斯理论，假设各特征相互独立的分类方法
+
+协同过滤分类系统：
+相似度计算：曼哈顿距离|x1-x2|+|y1-y2|、欧式距离、pearson相关系数
+
+案例2：大数据
+映射map():把一组键值对映射成一组新的键值对
+规约reduce():并行保证所有映射的键值对中的每一个共享相同的键组
+Hadoop:FileSplit()文件分割，Map()分布处理小文件，Reduce()归集处理
+MapReduce:编程模型
